@@ -48,23 +48,23 @@
 
 // primoTrueOFalse(8);
 
-function cuentaCifras(num){
+function cuentaCifras(num) {
 
-var contador = 0;
+    var contador = 0;
 
-// Si el numero es 0, tiene una cifra
-if (num == 0) {
-    contador = 1;
-} else {
-    // Vamos dividiendo entre 10 hasta que lleguemos a 0
-    for (var i = Math.abs(num); i > 0; i /= 10) {
-        contador++;
+    // Si el numero es 0, tiene una cifra
+    if (num == 0) {
+        contador = 1;
+    } else {
+        // Vamos dividiendo entre 10 hasta que lleguemos a 0
+        for (var i = Math.abs(num); i > 0; i /= 10) {
+            contador++;
+        }
+
     }
-
-}
-{
-console.log(contador);
-}
+    {
+        console.log(contador);
+    }
 }
 
 cuentaCifras(14);
