@@ -7,7 +7,6 @@
     <title>Coloca lineas</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='codigoLineas.js'></script>
 </head>
 
 <body>
@@ -15,11 +14,12 @@
     <p>
         ¿Cuántas lineas quieres?
         <!--barra de texto type='text'   barra de boton type='button'-->
-        <input type="text" />
-        <input type="button" value="A darle!" />
+        <input type="text" id="textin" />
+        <input type="button" value="A darle!" id="boton" />
     </p>
     <canvas width="300" height="300" id="dibujoLineas"></canvas>
     <p>Así quedó tu dibujo según las lineas solicitadas</p>
+    <script src='codigoLineas.js'></script>
 </body>
 
 </html>
