@@ -48,5 +48,37 @@ const camilo = {
 
 // console.log(Object.keys(camilo))
 // console.log(Object.values(camilo))
-console.log(camilo.hasOwnProperty('nombre'))
-console.log(camilo.hasOwnProperty('nacimiento'))
+// console.log(camilo.hasOwnProperty('nombre'))
+// console.log(camilo.hasOwnProperty('nacimiento'))
+
+
+
+
+let pc = {
+    nombre: 'NavasPc',
+    procesador: 'Ryzen 7',
+    ram: '8GB',
+    espacio: '1TB',
+    color: 'negro',
+    aplicaciones: ['Rave', 'Visual Studio Code', 'Google Chrome', 'Zoom', 'AnyDesk', 'Steam',
+        'UTorrent', 'RabbitVPN', 'Riot Client', 'Blitz'],
+    juegos: ['Valorant', 'League Of Legends', 'Genshin Impact', 'Minecraft', 'FIFA 22', 'Fall Guys',
+        'The Sims4', 'Crab Game', 'World Of Warcraft', 'Roblox', 'CSGO', 'Assasin Creed', 'Rocket League',
+        'Aim Lab', 'Stumble Guys', 'Half Life 2', 'GTA V'],
+    escritorio: {
+        instalado: ['Archivos', 'Edge', 'Filmora 11', 'Security Defender Windows'],
+        cursoJavas: ['Arrays', 'borradorEjercicios', 'bucles', 'controlDeFlujos', 'funciones',
+            'funciones 2', 'objetos', 'operadores', 'operadoresDeComparacion', 'operadoresLogicos',
+            'variables'],
+        cursoYT: {
+            platzi: ['copyCanvas', 'cuantasLineasQuieres', 'fizzBuzz', 'pokemones', 'villaPlatzi',
+                'teclas', 'primerPasoCanvas', 'htmlYJsUnion', 'forNumeroAleatorio'],
+            vidios: {
+                historiaDeCofla: ['cofla', 'coflon'],
+                sueltos: ['arraysMapReduce', 'bucleFor', 'objetos'],
+            }
+        }
+    }
+}
+
+console.log(pc.escritorio.cursoYT.vidios.sueltos)
