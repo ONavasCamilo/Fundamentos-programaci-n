@@ -1,0 +1,25 @@
+/* #elemento-para-modificar{ 
+        color:red
+} */
+
+
+[rancio='see']{
+    color: green
+}
+
+h2 {
+    color: blue
+}
+
+h2 p{
+    color: greenyellow
+}
+
+
+.h2-class p {
+    color: aquamarine;
+}
+
+.h2-class b:hover{
+    color: black;
+}
