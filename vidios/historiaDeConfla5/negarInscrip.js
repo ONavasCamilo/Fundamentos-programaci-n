@@ -8,7 +8,7 @@ let materias = {
 const inscribir = (alumno, materia) => {
     alumnos = materias[materia]
     if (alumnos.length >= 21) {
-        document.write(`Lo siento <b>${alumno}</b>, las clases de <b>${materia}</b> ya están llenas<br>`)
+        document.write(`Lo siento <b>${alumno}</b>, las clases de <b>${materia}</b> ya están llenas`)
     } else {
         alumnos.push(alumno)
         if (materia == 'fisica') {
