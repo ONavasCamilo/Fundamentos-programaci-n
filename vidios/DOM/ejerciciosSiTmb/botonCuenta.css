@@ -1,0 +1,39 @@
+body{
+    background: rgb(8,160,181);
+    background: radial-gradient(circle, rgba(8,160,181,1) 34%, rgba(95,60,107,1) 78%);
+}
+
+main {
+    background-color: rgba(220, 10, 10, 0.2);
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.section1{
+   background-color: rgba(33, 32, 32, 0.2);
+   height: 200px;
+   padding: 30px;
+}
+
+.titulo{
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.boton{
+    width: 130px;
+    height: 32px;
+    margin-top: 30px;
+}
+
+.texto{
+    height: 35px;
+    width: 200px;
+    background-color: rgba(14, 7, 114, 0.2);
+    margin-top: 30px;
+   margin-left: 115px;
+   padding: 5px;
+}
+
