@@ -1,0 +1,40 @@
+.resolucion {
+    width: 90%;
+    text-align: center;
+}
+
+/* MOVIL */
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 990px) {
+    desktop {
+        display: none;
+    }
+
+    .movil {
+        display: none;
+    }
+}
+
+/* ESCRITORIO */
+@media (min-width: 991px) {
+
+    .tablet {
+        display: none;
+    }
+
+    .movil {
+        display: none;
+    }
+}

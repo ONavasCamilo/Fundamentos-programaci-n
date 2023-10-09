@@ -4,9 +4,16 @@ body {
     font-family: sans-serif;
     color: white;
   }
+
+  .contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
   
   main {
-    width: 730px;
+    max-width: 100%;
     margin: 20px auto;
     display: flex;
     align-items: center;
@@ -16,6 +23,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 0 10px 10px 10px;
     border-radius: 25px;
+    width: 100%;
   }
   
   .titulo-blanco{
@@ -54,8 +62,8 @@ body {
     background-color: rgba(255,255,255,0.2);
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    width: 300px;
-    height: 460px;
+    width: 100%;
+    height: auto;
     padding: 0 20px;
     border-top-right-radius: 20px;
   }
@@ -83,32 +91,14 @@ body {
     text-decoration: none;
   }
   
-  @media (max-width: 768px) {
-      /* Estilos para pantallas más pequeñas */
-      body {
-        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
-    }
-  
-    main{
-      max-width: 500px;
-      max-height: 600px;
-    }
-    .botones {
-        font-size: 20px; /* Ajusta el tamaño del texto en los botones */
-        padding: 5px 5px; /* Espaciado dentro del botón */
-    }
-    .section1, .section2 {
-      margin: 10px;
-      padding: 20px;
+  @media screen and (max-width: 800px){
+  .contenedor{
+    width: 100%;
   }
-  
-  /* Ajusta el ancho máximo del contenido para evitar que se extienda demasiado en pantallas grandes */
-  .section1, .section2 {
-      max-width: 80%;
+  .main{
+    width: 100%;
   }
-  .botones {
-    transition: all 0.3s ease; /* Ajusta la duración y la curva de la transición según sea necesario */
+  .section2{
+    width: 100%;
   }
-  }
-  
-  
+}

@@ -1,6 +1,6 @@
 body {
-    background: rgb(34, 193, 195);
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    background: rgb(138,13,121);
+background: radial-gradient(circle, rgba(138,13,121,1) 37%, rgba(164,27,198,1) 57%);    
     font-family: sans-serif;
     color: white;
   }
@@ -18,6 +18,7 @@ body {
     border-radius: 25px;
   }
   
+
   .titulo-blanco{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -43,11 +44,12 @@ body {
     font-size: 40px;
     color: rgb(90, 18, 18);
     font-weight: bold;
-    border-radius: 1px;
+    border-radius: 20px;
+    border-color: #740064;
   }
   .botones:hover{
     cursor: pointer;
-    background-color: #67a17bbb;
+    /* background-color: #67a17bbb; */
     border-color: transparent;
   }
   .section2{
@@ -83,32 +85,6 @@ body {
     text-decoration: none;
   }
   
-  @media (max-width: 768px) {
-      /* Estilos para pantallas más pequeñas */
-      body {
-        font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
-    }
-  
-    main{
-      max-width: 500px;
-      max-height: 600px;
-    }
-    .botones {
-        font-size: 20px; /* Ajusta el tamaño del texto en los botones */
-        padding: 5px 5px; /* Espaciado dentro del botón */
-    }
-    .section1, .section2 {
-      margin: 10px;
-      padding: 20px;
+  img{
+    width: 80%;
   }
-  
-  /* Ajusta el ancho máximo del contenido para evitar que se extienda demasiado en pantallas grandes */
-  .section1, .section2 {
-      max-width: 80%;
-  }
-  .botones {
-    transition: all 0.3s ease; /* Ajusta la duración y la curva de la transición según sea necesario */
-  }
-  }
-  
-  

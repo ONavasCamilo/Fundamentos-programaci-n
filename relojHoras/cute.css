@@ -1,0 +1,59 @@
+body{
+    background: hwb(0 6% 37% / 0.607);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+strong{
+    background-color: hwb(0 24% 22% / 0.607);
+    color: ;
+}
+
+.reloj{
+    background-color: aquamarine;
+    text-align: center;
+    
+}
+
+.form{
+    background: hwb(0 9% 53% / 0.441);
+    text-align: center;
+
+}
+
+.reloj:hover{
+    cursor: default;
+}
+
+.title{
+    background: hwb(0 9% 53% / 0.441);
+    width: 95%;
+    height: auto;
+    text-align: center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.section1{
+    display: flex;
+
+}
+
+.parrafo1{
+    background: hwb(0 16% 44% / 0.441);
+    width: 40%;
+    height: 30%;
+    padding: 30px;
+    margin-left: 50px;    
+    
+}
+
+.reloj-solar{
+    /* width: 559px; */
+    width: 40%;
+    height: auto;
+    margin-left: 80px;
+    margin-top: 15px;
+    border-radius: 4%;
+}

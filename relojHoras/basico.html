@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj funcional</title>
+    <link rel="stylesheet" href="cute.css">
+</head>
+
+<body onload="clock()">
+    <header>
+        <form name="form_reloj" class="form">
+            <input type="text" name="reloj" class="reloj" onfocus="window.document.form_reloj.reloj.blur()">
+        </form>
+        <h1 class="title">HISTORIA DE LA HORA</h1>
+    </header>
+
+
+    <main class="main">
+
+        <section class="section1">
+            <p class="parrafo1">Hace 3.500 años, <strong class="egiptos">los egipcios</strong> dividieron el día en 24 horas e inventaron un reloj solar
+            que media el tiempo mediante la longitud de las sombras. Con la barra orientada hacia el oeste, el sol llegaría a las doce
+            del mediodía justo cuando no hubiera sombra en el instrumento</p>
+            <img src="./images/relojSolar.jpg" alt="reloj solar" class="reloj-solar">
+        </section>
+
+        <section class="section2">
+            <h3 class="subtitulo">¿Pero, cúal es el origen del actual término <strong>hora</strong>?</h3>
+        </section>
+    </main>
+
+
+
+
+    <script src="relojFuncional.js"></script>
+</body>
+
+</html>
