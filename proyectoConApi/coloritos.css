@@ -18,36 +18,10 @@ border: 2px solid #9ca7e8;
     margin: 30px 310px;
     text-align: center;
     color: #5d728a;
-    position: relative;
 }
 
 h1{
     padding-top: 25px;   
-}
-
-.gatitos{
-    background-color: rgb(236, 174, 174);
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    border: 1px solid rgb(239, 181, 181);
-    width: 100px;
-    height: 25px;
-    text-align: center;
-    border-radius: 5px;
-    color: #587fab
-}
-.gatitos:hover{
-    cursor: pointer;
-    background: rgba(207, 111, 148, 0.436);
-}
-.gatoAleat{
-    width: 250px;
-    height: 180px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 3px;
 }
 
 .container{
@@ -94,11 +68,5 @@ background: radial-gradient(circle, rgba(222, 159, 183, 0.967) 41%, rgba(156,167
 
 a{
     text-decoration: none;
-    display: block; /* Agrega esta línea para evitar que los enlaces se salgan del div */
-
-}
-
-a:visited {
-    color: #587fab; /* Establece el color que desees para los enlaces visitados */
 }
 
