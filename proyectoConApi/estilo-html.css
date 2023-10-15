@@ -1,4 +1,194 @@
 body{
     background: rgb(210,120,69);
 background: linear-gradient(90deg, rgba(210,120,69,1) 16%, rgba(233,108,84,1) 29%, rgba(210,120,69,1) 61%, rgba(233,108,84,1) 80%);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 0;
+}
+
+:root{
+    --negro: #000;
+    --naranja: #e1e092;
+    --bloques: #e1e09267;
+}
+
+header{
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    padding: 40px;
+    /* border: 1px solid #33fff3; */
+}
+
+.volver{
+    position: absolute;
+    background-color: var(--bloques);
+    width: 140px;
+    height: 50px;
+    top: 4px;
+    left: 4px;
+    text-align: center;
+    color: var(--negro);
+    border-radius: 100px;
+    line-height: 50px; /* Esto centra el texto verticalmente */
+}
+
+.volver:hover{
+    background-color: var(--naranja);
+    cursor: pointer;
+}
+
+h1{
+   color: var(--negro);
+   margin-left: 90px;
+
+}
+
+.redes{
+    background-color: var(--naranja);
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    margin-top: 45px;
+    width: 160px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+ul{
+    list-style-type: none;
+    padding: 10px;
+}
+
+li{
+    padding: 8px;   
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--negro);
+    font-size: 25px;
+}
+
+.logo-html{
+    width: 160px;
+    height: 194px;
+    margin: auto;
+    position: absolute;
+    top: 45px;
+    right: 245px;
+}
+
+.bloque1{
+    /* border: 1px solid black; */
+    width: 900px;
+    text-align: center;
+}
+
+
+.estruc {
+    position: relative;
+    top: -50px; 
+    margin: 25px;
+    width: 600px;
+    border-radius: 13px;
+    margin-bottom: -30px;
+}
+
+.p-parrafo{
+    font-size: 17px;
+    color: #ffffff;
+    position: relative;
+    top: -50px; 
+    margin: 15px;
+    padding: 0 60px;
+}
+
+
+
+strong{
+        color: var(--naranja);
+}
+
+.bloque2{
+    position: absolute;
+    top: 290px;
+    right: 40px;
+    width: 345px;
+    height: 1400px;
+    /* border: 1px solid black; */
+    text-align: center;
+    background-color: #37e1d840;
+    padding: 20px;
+}
+
+.formularios{
+    color: var(--negro)
+}
+
+ .text-form{
+    color: #fff;
+}
+
+.form{
+    background-color: #78010111;
+    padding: 20px;
+    width: 260px;
+    height: 200px;
+    margin: 15px auto;
+    border-radius: 11%;
+}
+
+form input{
+    width: 200px;
+    height: 20px;
+    background-color:#73fff860;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 4px;
+    outline: none;
+}
+/* 
+.nombre{
+    width: 200px;
+    height: 20px;
+    background-color:#73fff860;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+.correo{
+    width: 200px;
+    height: 20px;
+    background-color:#73fff860;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+.numero{
+    width: 200px;
+    height: 20px;
+    background-color:#73fff860;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+ }  */
+
+.enviar{
+    width: 140px;
+    height: 35px;
+    background-color:#5eb7b39c;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+} 
+
+.img-tabla{
+    border-radius: 11px;
 }

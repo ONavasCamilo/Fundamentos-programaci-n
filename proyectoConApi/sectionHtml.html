@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conceptos de HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="estilo-html.css">
 </head>
+
 <body>
     <header class="header">
-        <h1 class="titulo">EL CUERPO DE CUALQUIERA PÁGINA WEB</h1>
+        <a href="index.html"><div class="volver">Volver</div></a>
+        <h1 class="titulo">EL CUERPO DE CUALQUIER PÁGINA WEB</h1>
         <div class="redes">
             <ul>
-                <li>Instagram</li>
-                <li>Twitter</li>
-                <li>Tik Tok</li>
+                <a href="https://www.instagram.com/camilo.nvs/">
+                    <li><span class="fab fa-instagram"></span> Instagram</li>
+                </a>
+                <a href="https://twitter.com/Nyzlow">
+                    <li><span class="fab fa-twitter"></span> Twitter</li>
+                </a>
+                <a href="https://www.tiktok.com/@nyzlow">
+                    <li><span class="fab fa-tiktok"></span> Tik Tok</li>
+                </a>
             </ul>
         </div>
-        
+        <img class="logo-html" src="./images/logo-html.png" alt="Logo de HTML">
     </header>
+
+
+    <main>
+        <section class="bloque1">
+            <p class="p-parrafo">Debemos comenzar entendiendo la estructura básica de cualquier página web,
+                es importante tener en cuenta <strong>!DOCTYPE html</strong> como nuestra primera línea de
+                código. Requerida en todo documento
+                HTML, se trata de una instrucción al navegador web sobre la versión en la cual está escrita la página.
+                <strong>Revise con atención la estructura básica:</strong>
+            </p>
+            <img class="estruc" src="./images/estrucBasica.png" alt="Estructura HTML5">
+            <p class="p-tabla">La tabla periodica de <strong>HTML</strong> con muchos de los elementos más importantes:</p>
+            <img class="img-tabla" src="./images/tablaPeriodica.jpg" alt="Tabla Periodica HTML">
+        </section>
+
+        <section class="bloque2">
+            <h2 class="formularios">FORMULARIOS BÁSICOS</h2>
+            <p class="text-form">Los <strong>formularios</strong> son una forma sencilla de establecer mecanismos para que el usuario pueda introducir
+                información en una página web de forma sencilla e intuitiva, y el sitio web sea capaz de procesarla
+                correctamente y añadirla en una base de datos de la página.</p>
+                <h4 class="formularios">Primer formulario:</h4>
+                <form action="" class="form">
+                    <span class="fa-solid fa-user"></span><input type="text" placeholder="Nombre" class="nombre">
+                    <span class="fa-solid fa-envelope"></span><input type="email" placeholder="Correo" class="correo">
+                   <span class="fa-solid fa-lock"></span><input type="password" placeholder="Contraseña" class="numero">
+                    <input type="submit" class="enviar" id="enviar">
+                </form>
+            </section>
+
+
+
+
+    </main>
+
 </body>
+
 </html>

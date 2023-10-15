@@ -11,7 +11,8 @@
 
 <body>
     <header class="header">
-        <h1 class="titulo">EL CUERPO DE CUALQUIERA PÁGINA WEB</h1>
+        <a href="elIndex.html"><div class="volver">Volver</div></a>
+        <h1 class="titulo">EL CUERPO DE CUALQUIER PÁGINA WEB</h1>
         <div class="redes">
             <ul>
                 <a href="https://www.instagram.com/camilo.nvs/">
@@ -31,14 +32,34 @@
 
     <main>
         <section class="bloque1">
-                <h3 class="subtitulo">Debemos comenzar entendiendo la estructura básica de cualquiera página web, 
-                    es importante también tener en cuenta <strong>!DOCTYPE html</strong> siendo nuestras primera línea de código requerida en todo documento 
-                    HTML y se trata de una instrucción al navegador web sobre la versión en la cual está escrita la página. 
-                    <strong>Revise con atención la estructura básica:</strong>
-                </h3>
-                <img class="estruc" src="./images/estrucBasica.png" alt="Estructura HTML5">
-
+            <p class="p-parrafo">Debemos comenzar entendiendo la estructura básica de cualquier página web,
+                es importante tener en cuenta <strong>!DOCTYPE html</strong> como nuestra primera línea de
+                código. Requerida en todo documento
+                HTML, se trata de una instrucción al navegador web sobre la versión en la cual está escrita la página.
+                <strong>Revise con atención la estructura básica:</strong>
+            </p>
+            <img class="estruc" src="./images/estrucBasica.png" alt="Estructura HTML5">
+            <p class="p-tabla">La tabla periodica de <strong>HTML</strong> con muchos de los elementos más importantes:</p>
+            <img class="img-tabla" src="./images/tablaPeriodica.jpg" alt="Tabla Periodica HTML">
         </section>
+
+        <section class="bloque2">
+            <h2 class="formularios">FORMULARIOS BÁSICOS</h2>
+            <p class="text-form">Los <strong>formularios</strong> son una forma sencilla de establecer mecanismos para que el usuario pueda introducir
+                información en una página web de forma sencilla e intuitiva, y el sitio web sea capaz de procesarla
+                correctamente y añadirla en una base de datos de la página.</p>
+                <h4 class="formularios">Primer formulario:</h4>
+                <form action="" class="form">
+                    <span class="fa-solid fa-user"></span><input type="text" placeholder="Nombre" class="nombre">
+                    <span class="fa-solid fa-envelope"></span><input type="email" placeholder="Correo" class="correo">
+                   <span class="fa-solid fa-lock"></span><input type="password" placeholder="Contraseña" class="numero">
+                    <input type="submit" class="enviar" id="enviar">
+                </form>
+            </section>
+
+
+
+
     </main>
 
 </body>

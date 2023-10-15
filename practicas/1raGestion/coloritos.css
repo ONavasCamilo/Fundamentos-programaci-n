@@ -51,8 +51,11 @@ h1{
 }
 
 .container{
+    width: 80%;
+    max-width: 1200px;
     display: flex;
     margin-left: 85px;
+    margin: 0 auto;
 }
 
 .lenguajes{
@@ -101,4 +104,5 @@ a{
 a:visited {
     color: #587fab; /* Establece el color que desees para los enlaces visitados */
 }
+
 

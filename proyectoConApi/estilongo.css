@@ -1,0 +1,107 @@
+body{
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+header{
+    background-color: #2ea;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+main{
+    display: flex;
+    padding: 10px;
+}
+
+.section-one{
+    width: 50%;
+    text-align: center;
+
+}
+
+.section-two{
+    width: 50%;
+    text-align: center;
+}
+
+.form-one{
+    padding: 10px;
+}
+.form-two{
+    padding: 20px;
+}
+
+.form-one__input{
+    display: block;
+    margin: 10px auto;
+    outline: none;
+    background-color: rgba(103, 246, 198, 0.534);
+    border-radius: 11px;
+    width: 40%;
+    height: 8vh;
+    border: 3px solid rgb(2, 255, 171);
+    color: rgb(0, 0, 0);
+}
+
+.form-one__submit{
+    width: 30%;
+    height: 6vh;
+    background-color: rgb(141, 255, 217);
+    border-radius: 14px;
+    border: 3px solid rgb(2, 255, 171);
+    margin: 10px;
+}
+
+.form-two__input{
+    display: block;
+    margin: 10px auto;    
+    background-color: rgba(103, 246, 198, 0.534);
+    width: 50%;
+    height: 6vh;
+    border: 3px solid rgb(2, 255, 171);
+
+}
+
+.form-two__submit{
+    width: 35%;
+    height: 5vh;
+    background-color: rgb(141, 255, 217);
+    border: 3px solid rgb(2, 255, 171);
+    margin: 10px;
+}
+
+footer{
+    background-color: #2ea;
+    width: 100%;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 767px){
+    main{
+        display: inline;
+    }
+    .section-one{
+        margin: 0 auto;
+    }
+    .section-two{
+        margin: 0 auto;
+    }
+    .form-one__input{
+        width: 100%;
+    }
+    .form-one__submit{
+        width: 80%;
+    }
+    .form-two__input{
+        width: 100%;
+    }
+    .form-two__submit{
+        width: 80%;
+    }
+}

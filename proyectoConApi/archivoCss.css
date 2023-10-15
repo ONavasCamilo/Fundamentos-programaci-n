@@ -1,0 +1,78 @@
+body, h1, h2, h3, p, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden; /* Esto previene el desplazamiento horizontal */
+
+}
+
+header {
+    background-color: aquamarine;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.forms{
+    background-color: rgb(95, 129, 198);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.bloque-form-one{
+    background-color: rgba(127, 255, 212, 0.655) ;
+    padding: 20px;
+    width: 20%;
+    margin: 10px auto;
+}
+
+.form-one-lb{
+    display: block;
+    padding: 0px 20px;  
+}
+
+.form-one-input{
+    padding: 10px;
+    outline: none;
+    width: 80%;
+    margin: 20px;
+}
+
+.form-one-boton{
+    padding: 10px;
+    width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+    .forms {
+        padding: 10px;
+    }
+    .form-one {
+        width: 90%; /* Utiliza el 90% del ancho de la pantalla */
+        max-width: 300px; /* Establece un ancho máximo para evitar que el formulario se estire demasiado */
+        margin: 0 auto; /* Centra el formulario en la pantalla */
+    }
+    .form-one-lbNombre, .form-one-lbContraseña {
+        margin-bottom: 10px; /* Agrega espacio entre las etiquetas y los campos de entrada */
+    }
+          .form-one-inpNombre, .form-one-inpContraseña {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    }
+    button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px; /* Ajusta el tamaño de fuente para el botón */
+    }
+}
+
+
+
+
+
+
