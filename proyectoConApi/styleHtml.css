@@ -1,0 +1,95 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: #ffff8c;
+}
+h1 {
+  width: 50%;
+  margin-top: 64px;
+  margin-left: 10px;
+  font-size: 37px;
+  color: #f16528;
+  text-align: center;
+}
+
+.volver {
+  background-color: #f16528;
+  border: 2px solid #ffffff;
+  /* width: 5%; */
+  height: 40%;
+  margin: 10px;
+  border-radius: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volver a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 10px 25px;
+}
+
+header img {
+  height: 28vh;
+}
+
+header img {
+  margin-left: 50px;
+  /* padding: 20px; */
+}
+
+.logo-html {
+  padding-top: 15px;
+}
+
+.redes {
+  list-style-type: none;
+  text-align: center;
+  margin-right: 60px;
+  margin-top: 35px;
+}
+.redes li {
+  display: flex;
+  margin: 20px;
+  color: #f16528;
+  font-size: 10px;
+}
+
+a {
+  color: #f16528;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    flex-direction: column; /* Cambiar la dirección del flex container a columna */
+    align-items: flex-start; /* Alinear los elementos a la izquierda */
+  }
+
+  .volver {
+    width: 17%; /* Permitir que el botón "Volver" ocupe el ancho natural del contenido */
+    margin: 10px 10px 0 10px; /* Ajustar los márgenes según sea necesario */
+    align-items: center;
+    justify-content: center;
+  }
+  .volver a {
+    width: auto;
+  }
+
+  header h1 {
+    width: 70%;
+    margin: -5px 90px; /* Ajustar el margen del título según sea necesario */
+    font-size: 34px; /* Ajustar el tamaño de la fuente según sea necesario */
+    text-align: center; /* Alinear el texto a la izquierda */
+  }
+}

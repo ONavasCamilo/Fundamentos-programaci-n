@@ -1,109 +1,119 @@
-body{
-    /* background: rgb(238,174,202);    INVERSO ROSA Y AZUL
+body {
+  /* background: rgb(238,174,202);    INVERSO ROSA Y AZUL
 background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-background: rgb(127,138,199);
-background: radial-gradient(circle, rgba(127,138,199,1) 25%, rgba(222,159,183,0.966999299719888) 98%);
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: rgb(127, 138, 199);
+  background: radial-gradient(
+    circle,
+    rgba(127, 138, 199, 1) 25%,
+    rgba(222, 159, 183, 0.966999299719888) 98%
+  );
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.fondo-titulo{
-    /* background: rgb(27,177,198);
+.fondo-titulo {
+  /* background: rgb(27,177,198);
 background: radial-gradient(circle, rgb(26, 177, 197) 38%, rgb(17, 129, 146) 100%); */
-background: rgb(222,159,183);
-background: radial-gradient(circle, rgba(222,159,183,0.966999299719888) 41%, rgba(156,167,232,1) 100%);
-border-radius: 4%;
-border: 2px solid #9ca7e8;
-    width: 580px;
-    height: 140px;
-    margin: 30px 310px;
-    text-align: center;
-    color: #5d728a;
-    position: relative;
+  background: rgb(222, 159, 183);
+  background: radial-gradient(
+    circle,
+    rgba(222, 159, 183, 0.966999299719888) 41%,
+    rgba(156, 167, 232, 1) 100%
+  );
+  border-radius: 4%;
+  border: 2px solid #9ca7e8;
+  width: 580px;
+  height: 140px;
+  margin: 30px 310px;
+  text-align: center;
+  color: #5d728a;
+  position: relative;
 }
 
-h1{
-    padding-top: 25px;   
+h1 {
+  padding-top: 25px;
 }
 
-.gatitos{
-    background-color: rgb(236, 174, 174);
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    border: 1px solid rgb(239, 181, 181);
-    width: 100px;
-    height: 25px;
-    text-align: center;
-    border-radius: 5px;
-    color: #587fab
+.gatitos {
+  background-color: rgb(236, 174, 174);
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: 1px solid rgb(239, 181, 181);
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  color: #587fab;
 }
-.gatitos:hover{
-    cursor: pointer;
-    background: rgba(207, 111, 148, 0.436);
+.gatitos:hover {
+  cursor: pointer;
+  background: rgba(207, 111, 148, 0.436);
 }
-.gatoAleat{
-    width: 250px;
-    height: 180px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 3px;
-}
-
-.container{
-    width: 80%;
-    max-width: 1200px;
-    display: flex;
-    margin-left: 85px;
-    margin: 0 auto;
+.gatoAleat {
+  width: 250px;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 3px;
 }
 
-.lenguajes{
-    /* background: rgb(27,177,198);
+.container {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  margin-left: 85px;
+  margin: 0 auto;
+}
+
+.lenguajes {
+  /* background: rgb(27,177,198);
     background: radial-gradient(circle, rgb(26, 177, 197) 38%, rgb(17, 129, 146) 100%); */
-    background: rgb(222,159,183);
-background: radial-gradient(circle, rgba(222, 159, 183, 0.967) 41%, rgba(156,167,232,1) 100%);
-    background-color: rgb(114, 94, 94);
-    border-radius: 4%;
-    border: 2px solid #9ca7e8;
-    width: 330px;
-    height: 320px;
-    margin: 10px;
-    text-align: center;
-    color: #587fab;
-    font-size: 20px;
+  background: rgb(222, 159, 183);
+  background: radial-gradient(
+    circle,
+    rgba(222, 159, 183, 0.967) 41%,
+    rgba(156, 167, 232, 1) 100%
+  );
+  background-color: rgb(114, 94, 94);
+  border-radius: 4%;
+  border: 2px solid #9ca7e8;
+  width: 330px;
+  height: 320px;
+  margin: 10px;
+  text-align: center;
+  color: #587fab;
+  font-size: 20px;
 }
 
-.lenguajes:hover{
-    cursor: pointer;
-    background: rgba(223, 171, 191, 0.967);
+.lenguajes:hover {
+  cursor: pointer;
+  background: rgba(223, 171, 191, 0.967);
 }
 
-.logo-html{
-    width: 185px;
-    height: 220px;
-    padding-top: 10px;
+.logo-html {
+  width: 185px;
+  height: 220px;
+  padding-top: 10px;
 }
-.logo-css{
-    width: 178px;
-    height: 205px;
-    padding-top: 20px;
+.logo-css {
+  width: 178px;
+  height: 205px;
+  padding-top: 20px;
 }
-.logo-js{
-    width: 185px;
-    height: 205px;
-    padding-top: 20px;
+.logo-js {
+  width: 185px;
+  height: 205px;
+  padding-top: 20px;
 }
 
-a{
-    text-decoration: none;
-    display: block; /* Agrega esta línea para evitar que los enlaces se salgan del div */
-    color: #587fab;
-
+a {
+  text-decoration: none;
+  display: block; /* Agrega esta línea para evitar que los enlaces se salgan del div */
+  color: #587fab;
 }
 
 a:visited {
-    color: #587fab; /* Establece el color que desees para los enlaces visitados */
+  color: #587fab; /* Establece el color que desees para los enlaces visitados */
 }
-
-
