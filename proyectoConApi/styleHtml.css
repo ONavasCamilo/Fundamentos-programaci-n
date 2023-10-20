@@ -38,14 +38,13 @@ h1 {
   box-sizing: border-box;
   padding: 10px 25px;
 }
-
-header img {
-  height: 28vh;
+.volver:hover{
+    background-color: #ff9060;
 }
 
 header img {
+  height: 28vh;
   margin-left: 50px;
-  /* padding: 20px; */
 }
 
 .logo-html {
@@ -92,4 +91,26 @@ a {
     font-size: 34px; /* Ajustar el tamaño de la fuente según sea necesario */
     text-align: center; /* Alinear el texto a la izquierda */
   }
+  header img{
+    width: auto;
+    height: 30vh;
+    margin-left: 166px;
+}/* Estilos para las redes sociales */
+.redes {
+    padding: 0;
+    margin: 10px 0; /* Pequeño margen arriba y abajo */
+}
+
+.redes li {
+    margin: 5px 0; /* Ajusta el margen superior e inferior según sea necesario */
+}
+
+
+
+
+
+
+
+
+
 }

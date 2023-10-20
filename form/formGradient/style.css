@@ -1,0 +1,29 @@
+body{
+   background-color: rgb(79, 151, 151); 
+}
+
+header{
+    width: calc(100% - 20px);
+    padding: 10px;  
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 25px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+.subtitulo{
+    text-align: center;
+    padding: 10px;
+    font-size: 21px;
+}
+
+.one-form_input{
+    margin: 20px;
+    justify-self: right;
+}
