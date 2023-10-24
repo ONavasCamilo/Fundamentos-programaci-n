@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista</title>
+    <title>Lista personal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
@@ -13,22 +12,28 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header class="header">
-            <h1 class="header__titulo">Lista</h1>
+        <div class="header__contenedor">
+        <div class="header__tareas">
+            <span id="tareas__actual" class="tareas__actuales tareas__tarea"></span>
+            <span id="tareas__pendiente" class="tareas__pendientes tareas__tarea">Sin tareas pendientes</span>
+            <span id="tareas__hechas" class="tareas__hechas tareas__tarea"></span>
+        </div>
+        <!-- <div class="header__iconos">
+            <i></i>
+        </div> -->
+        </div>
     </header>
-
     <section>
         <div id="container" class="contenedor">
-            <p class="contenedor__texto">Agrega tu tarea acá</p>
-            <div class="agregados">
-                <input id="agregados__tarea" class="agregados__input" type="text" placeholder="Ingresa tu tarea">
+            <p class="contenedor__texto">Empieza a agregar actividades en tu lista:</p>
+            <div id="agregado" class="agregados">
+                <input id="agregados__tarea" class="agregados__input" type="text" placeholder="Escribe alguna actividad pendiente">
                 <input id="agregados__boton" class="agregados__agregado" type='button' value="Agregar">
             </div>
         </div>
     </section>
     <script src="main.js"></script>
 </body>
-
 </html>

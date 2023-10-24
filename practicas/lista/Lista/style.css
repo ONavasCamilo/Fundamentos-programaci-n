@@ -21,23 +21,40 @@ html {
   background-attachment: fixed;
 }
 
-.header__titulo {
-  width: calc(100% - 40px);
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 2.3em;
+.header__contenedor{
+    padding: 20px;
+    width: 45%;
+    min-height: 10vh;
+    margin: 0px auto;
+    margin-top: 60px;
+    background-color: rgba(35, 117, 104, 0.24);
+    border: 5px solid rgb(51, 255, 204);
+    border-bottom: none;
+    border-radius: 13px;
+}
+
+.header__tareas{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 10px;
+    color: rgb(51, 255, 204);
+}
+
+.tareas__tarea{
+    margin: 4px;
 }
 
 .contenedor {
   width: 60%;
   min-height: 250px;
   max-height: 700px;
-  margin: 30px auto;
-  border: 2px solid rgb(51, 255, 204);
+  margin: 0px auto;
+  border: 3px solid rgb(51, 255, 204);
+  background-color: rgba(0, 0, 0, 0.288);
   padding: 45px;
   overflow-y: auto;
+  border-radius: 7px;
 }
 
 .contenedor__texto {
@@ -60,9 +77,10 @@ html {
     background: rgba(0, 0, 0, 0.484);
     outline: none;
     border: none;
+    /* box-shadow: inset 0 0 0 1px rgb(51, 255, 204); */
 }
 .agregados__input:focus{
-    border: 1px solid rgb(51, 255, 204);
+    box-shadow: inset 0 0 0 1px rgb(51, 255, 204);
 
 }
 
@@ -70,15 +88,17 @@ html {
     width: 50%;
     height: 7vh;
     align-self: center;
-    color: #fff;
-    font-size: 17px;
+    color: #ffffff;
+    font-size: 19px;
     background: #86c8a5;
-    border: 1px solid rgb(64, 205, 170);
+    border: none;
     border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .agregados__agregado:hover{
     cursor: pointer;
-    background: rgb(9 177 135);
+    background: rgb(64, 205, 170);
 }
 
 .agregados__agregar{
@@ -91,64 +111,105 @@ html {
     padding: 17px;
     background: rgba(11, 212, 178, 0.098);
     color: #fff;
-    border: 1px solid #fff;
+    border: 3px solid #fff;
+    border-radius: 18px;
 }
 .agregados__agregar:hover{
-    border: 1px solid rgb(9 177 135);
+    border: 3px solid rgb(9 177 135);
     background: rgba(11, 212, 178, 0.18);
 
 }
 
+.agregados__aviso{
+   width: 50%;
+    margin: 0 auto;
+    color: #b71212;
+}
+
 .agregados__realizado{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 65%;
     height: 8vh;
     margin: 20px auto;
     padding: 17px;
-    background-color: rgba(48, 184, 130, 0.452);
-    color: #fff;
-    border: 1px solid #fff;
+    background-color: rgba(69, 197, 52, 0.247);
+    color: #28ff8c;
+    border: 3px solid #000000;
+    border-radius: 30px;
+}
+.agregados__realizado:hover{
+    background-color: rgba(39, 176, 21, 0.247);
+    border: 3px solid rgb(9 177 135);
+}
+
+.agregados__parrafo{
+    color: #46fc9b;
+    text-transform: uppercase;
+}
+
+.agregados__parrafo--realizado{
     text-decoration: line-through;
+    color: #000;
+    text-transform: lowercase;
 }
 
 .agregados__iconos{
-    width: 20%;
+    width: 30%;
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid black; */
+    margin: 6px;
 }
 
-.agregados__basura{
-    padding: 12px;
+.agregados__icono{
     background-color: #191b22;
     border-radius: 10px;
     color: #23bd87;
-    border: 1px solid #fff;
-    text-decoration: none;
+    border: 3px solid #fff;
+    padding: 10px;
+    margin: 5px;
 }
-.agregados__basura:hover{
+.agregados__icono:hover{
+    background-color: #000;
     cursor: pointer;
     color: #28ff8c;
-    border: 1px solid #23bd87;
+    border: 3px solid #23bd87;
+}
+.agregados__icono--select{
+    border: 3px solid #000;
 }
 
-.agregados__hecho{
-    color: #000000;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 9px;
+.agregados__input--modificar{
+    background: rgba(0, 0, 0, 0.484);
+    outline: none;
+    border: 0;
+    border-radius: 12px;
+    width: 60%;
+    height: 90%;
+    color: #fff;
+    text-align: center;
 }
-.agregados__hecho:hover{
-    color: #23bd87;
-    border: 2px solid #000;
-    cursor: pointer;
-}
-
 
 
 @media only screen and (max-width: 767px){
     .agregados{
         width: 100%;
+        margin: 30px auto;
+    }
+    
+    .agregados__input{
+        margin: 25px auto;
+    }
+
+    .agregados__agregar{
+        width: 85%;
+        font-size: .5em;
+    }
+
+    .agregados__iconos{
+        width: 50%;
+        padding: 10px;
     }
 }

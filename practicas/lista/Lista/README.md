@@ -3,10 +3,11 @@
 # Funcionalidades que faltan:
 
 - [X] Que se pueda borrar una tarea
-- [] Que una tarea se pueda marcar como completada
-- [] Que se pueda actualizar una tarea
+- [X] Que una tarea se pueda marcar como completada
+- [X] Que se pueda actualizar una tarea
 - [] Poder personalizar el color de background y texto de las tareas
 - [] Que haya un boton de "borrar todas las tareas"
+- [] Cuando borres una tarea, que aparezca un toast (alerta abajo a la derecha) que diga ''borraste x tarea, deshacer' si aprietas deshace
 - [] Sonidos para cuando creas, borras y completas una tarea.
 - [] Toast que te diga "Has agregado una tarea" "Se eliminó la tarea." "Se actualizó la tarea"
 - [] Que se muestre la fecha y hora de creación de la tarea
