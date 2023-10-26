@@ -13,6 +13,18 @@
 // de traducciones
 
 
+
+class Libro {
+    constructor(titulo, autor, traducciones){
+        this.titulo = titulo
+        this.autor = autor
+        this.traducciones = traducciones
+    }
+}
+
+
+
+
 class Libro {
     constructor(titulo, autor, traducciones) {
         this.titulo = titulo;

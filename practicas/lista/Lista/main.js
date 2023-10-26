@@ -184,7 +184,7 @@ function removerNumTareasHechas() {
     numTaHecha--
     if (numTaHecha <= 1) {
         tareasActual.innerHTML = `Total: ${numTaActual}`
-        tareasHechas.innerHTML = ''
+        tareasHechas.innerHTML = `Finalizado: ${numTaHecha}`
     } else {
         tareasActual.innerHTML = `Totales: ${numTaActual}`
         tareasHechas.innerHTML = `Finalizados: ${numTaHecha}`
@@ -193,6 +193,7 @@ function removerNumTareasHechas() {
         tareasActual.innerHTML = ''
         tareasPendientes.classList.add('tareas__pendientes', 'tareas__tarea')
         tareasPendientes.innerHTML = 'Sin tareas pendientes'
+        tareasHechas.innerHTML = ''
     }
 }
 

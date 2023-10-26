@@ -2,6 +2,10 @@
 //  pe.miFuncion("Hola Mundo") devolverá 10.
 
 
+function numCaracter(str){
+    console.log(str.length)
+}
+
 function numeroCaracteres(cadena){
     let contador = 0
     for (let i = 0; i < cadena.length; i++)
@@ -41,6 +45,17 @@ const contarCaract = (cadena = "") =>
 // 2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados,
 //  pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
 
+
+function textoRecortado(str, num){
+    return str.slice(0, num)
+}
+// console.log(textoRecortado('helouder', 4))
+
+
+
+
+
+
 function acortarTexto(str, num){
     // console.log(str.slice(1,num))
 }
@@ -61,18 +76,18 @@ const recortarTexto = (cadena = "", longitud = undefined) =>
 
 
 
-
-
-
-
-
-
-
-
-
-
 // 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, 
 // pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
+
+function arraySeparado(str, caracter){
+    return str.split(caracter)
+}
+
+// console.log(arraySeparado('hey q mas bien o que', ' '))
+
+
+
+
 
 function separar(string, caracter){
 let separado = string.split(caracter)
@@ -118,6 +133,17 @@ const cadenaAAreglo = (cadena = "", separador = undefined) =>
 
 // repetirTexto('hola mundo', 5)
 
+
+
+function repeat(text, veces){
+    for(let i = 0; i < veces; i++){
+        console.log(text)
+    }
+}
+
+repeat('ola', 3)
+
+
 const repetirTexto = (texto = "", veces = undefined) => {
     if(!texto) return console.log('no ingresaste texto')
     
@@ -135,4 +161,7 @@ const repetirTexto = (texto = "", veces = undefined) => {
     }
 
     // repetirTexto('hola mundo', 3)
-    repetirTexto('hola mundo', 21)
+    // repetirTexto('hola mundo', 21)
+
+
+
