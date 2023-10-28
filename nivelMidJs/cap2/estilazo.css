@@ -2,7 +2,7 @@ body{
     color: #222;
     font-family: sans-serif;
 }
-
+/* 
 .contenedor{
     padding: 30px;
     background-color: blue;
@@ -11,4 +11,36 @@ body{
 .contenedor-1{
     padding: 30px;
     background-color: red;
+} */
+
+.formulario-de-notas{
+    margin-top: 60px;
+    text-align: center;
+    background: #26a;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    margin: 0;
+    flex-grow: 1;
+    color: #fff;
+    /* flex-basis: 90%; */
+    margin-right: 10px;
+}
+
+input{
+   width: 30px;
+   border: none;
+}
+
+input[type='button']{
+    width: auto;
+    margin-left: 5px;
+    color: #48e;
+    background: #fff;
 }
