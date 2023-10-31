@@ -1,4 +1,4 @@
-import { boton, contenedor, tarea, tareasActual, tareasPendientes, tareasHechas, agregado, SIN_TAREAS_TEXTO } from './const'
+import { boton, contenedor, tarea, tareasActual, tareasPendientes, tareasHechas, agregado, SIN_TAREAS_TEXTO, contenedorTareas } from './const'
 
 let aviso = null
 
@@ -11,19 +11,8 @@ boton.addEventListener('click', () => {
     mostrarAviso('¡Debes escribir una tarea!')
     return
   }
-  OprimirBoton()
+  oprimirBoton()
   agregarNumTareas()
-
-  // basurero.addEventListener('click', () => {
-  //   // evento click en icono basura, elimina el div en el que esta
-  //   tareaNueva.remove() // remover padre div
-
-  //   // if (puedeModificarTexto === true) {
-  //   // removerNumTareas()
-  //   // } else {
-  //   removerNumTareasHechas()
-  //   // }
-  // })
 })
 
 function mostrarAviso (msj) {
@@ -46,16 +35,11 @@ function mostrarAviso (msj) {
 function agregarNumTareas () {
   numTaActual++
   numTaPendiente++
-  if (numTaActual <= 1) {
-    tareasActual.innerHTML = `Total: ${numTaActual}`
-  } else {
-    tareasActual.innerHTML = `Totales: ${numTaActual}`
-  }
-  if (numTaPendiente <= 1) {
-    tareasPendientes.innerHTML = `Pendiente: ${numTaPendiente}`
-  } else {
-    tareasPendientes.innerHTML = `Pendientes: ${numTaPendiente}`
-  }
+  contenedorTareas.innerHTML = `
+  <span class="tareas__tarea" id=" tareas__actual">Tareas totales: ${numTaActual}</span>
+  <span class="tareas__tarea" id="tareas__pendiente">Tareas pendientes: ${numTaPendiente}</span>
+  <span class="tareas__tarea" id="tareas__hechas">Tareas hechas: ${numTaHecha}</span>
+  `
 }
 
 function removerNumTareasHechas (tareaNueva, puedeModificarTexto) {
@@ -127,7 +111,7 @@ function numDeshecho () {
   }
 }
 
-function OprimirBoton () {
+function oprimirBoton () {
   let puedeModificarTexto = true
 
   const tareaNueva = document.createElement('div') // se crea nodo tipo elemento div para usarlo y luego hacer que aparezca al dar click
