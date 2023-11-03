@@ -1,0 +1,44 @@
+const d = document
+
+export default function darkTheme(btn, classDark) {
+    const $themeBtn = d.querySelector(btn),
+    $selectors = d.querySelectorAll("[data-dark]")
+    
+    // console.log($selectors)
+    const ls = window.localStorage; // Definir ls como localStorage
+    
+    let moon = "🌙",
+            sun = "☀️"
+
+            const lightMode = () => {
+                $selectors.forEach(el => el.classList.remove(classDark))
+                $themeBtn.textContent = moon
+                ls.setItem("theme", "light")
+            }
+            const darkMode = () => {
+                $selectors.forEach(el => el.classList.add(classDark))
+                $themeBtn.textContent = sun
+                ls.setItem("theme", "dark")
+            }
+            d.addEventListener("click", e => {
+                if(e.target.matches(btn)) {
+                    // console.log($themeBtn.textContent)
+                    if($themeBtn.textContent === moon) {
+                        darkMode()
+                    } else {
+                        lightMode()
+                    }
+                }
+            })
+            
+            // d.addEventListener("DOMContentLoaded", e => {
+                //     alert("ola desde la funcion dartheme")
+            // } )   DOMContentLoaded no puede estar dentro de otro DOMContentLoaded
+            d.addEventListener("DOMContentLoaded", e => {
+                console.log(ls.getItem("theme"));
+                if(ls.getItem("theme") === null) ls.setItem("theme", "light")
+                if(ls.getItem("theme")  === "light") lightMode()
+                if(ls.getItem("theme")  === "dark") darkMode()
+            })
+
+}

@@ -1,9 +1,9 @@
-import { boton, contenedor, tarea, agregado, contenedorTareas } from './const'
+import { boton, contenedor, tarea, contenedorTareas } from './const.js'
+import mostrarAviso from './funciones.js'
 
 let numTaActual = 0
 let numTaPendiente = 0
 let numTaHecha = 0
-let aviso = null
 
 boton.addEventListener('click', () => {
   if (tarea.value === '') {
@@ -160,21 +160,4 @@ function oprimirBoton () {
   })
 
   tarea.value = ''
-}
-
-function mostrarAviso (msj) {
-  if (aviso) {
-    // si ya hay aviso -
-    clearTimeout(aviso.timeoutId) // el contador reinicia
-    aviso.textContent = msj //  y actualizamos el contenido al mismo
-  } else {
-    aviso = document.createElement('p')
-    aviso.classList.add('agregados__aviso')
-    aviso.textContent = msj
-    agregado.insertBefore(aviso, boton)
-  }
-  aviso.timeoutId = setTimeout(() => {
-    aviso.remove() // se elimina
-    aviso = null // vuelve a su valor de null pq se elimino
-  }, 2500)
 }
