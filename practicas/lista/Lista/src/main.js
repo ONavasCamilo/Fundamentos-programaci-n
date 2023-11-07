@@ -1,4 +1,4 @@
-import { boton, contenedor, tarea, contenedorTareas } from './const.js'
+import { boton, contenedor, tarea, contenedorTareas, header } from './const.js'
 import mostrarAviso from './funciones.js'
 
 let numTaActual = 0
@@ -78,7 +78,6 @@ const appendChildren = (parent, children) => {
 
 function oprimirBoton () {
   let puedeModificarTexto = true
-
   const tareaNueva = createElementWithClass('div', 'agregados__agregar')
   const tareaSpan = createElementWithClass('span', 'agregados__parrafo')
   const iconos = createElementWithClass('div', 'agregados__iconos')
@@ -158,6 +157,20 @@ function oprimirBoton () {
       quitarNumHecho()
     } else if (target.classList.contains('agregados__lapiz')) cambiarTexto()
   })
-
   tarea.value = ''
+  tarea.focus()
 }
+
+header.addEventListener('click', e => {
+  const target = e.target
+  if (target.classList.contains('header__contenedor-cambiar_tema')) {
+    header.classList.toggle('header__contenedor-tema_rojo')
+    contenedor.classList.toggle('contenedor-tema_rojo')
+  } else if (target.classList.contains('header__contenedor-borrar_hechos')) {
+    tareaNueva.forEach(e => {
+      if (puedeModificarTexto === false) {
+        e.remove()
+      }
+    })
+  }
+})

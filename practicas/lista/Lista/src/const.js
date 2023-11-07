@@ -8,5 +8,5 @@ export const agregado = $id('agregado')
 // export const tareasPendientes = $id('tareas__pendiente')
 // export const tareasHechas = $id('tareas__hechas')
 export const contenedorTareas = $id('contenedor__tareas')
-
-export const SIN_TAREAS_TEXTO = 'Sin tareas actuales'
+// export const cambiarTema = $id('cambiar__tema')
+export const header = $id('header')
