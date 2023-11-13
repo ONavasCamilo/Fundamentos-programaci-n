@@ -466,7 +466,6 @@ return arrResultado
     saludar(){
         return `Hola, mi nombre es ${nombre}`
     }
-    return Usuario
    }
 
 
