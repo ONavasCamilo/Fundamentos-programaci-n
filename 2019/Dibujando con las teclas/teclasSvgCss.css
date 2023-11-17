@@ -1,0 +1,57 @@
+body
+{
+  background-color: #802B1A;
+  font-family: Helvetica;
+}
+
+h1
+{
+  color: "black";
+  font-family: fantasy;
+  font-size: 50pt;
+}
+
+p
+{
+  color: "black";
+  font-family: serif;
+  font-size: 14pt;
+}
+
+
+.canvitas
+{
+position: absolute;
+bottom: 180px;
+left: 920px;
+}
+
+
+.titulo
+{
+  position: relative;
+  bottom: 2px;
+  right: -8px;
+}
+
+.elsvg
+{
+  position: relative;
+  bottom: 150px;
+}
+
+.imagenBorrador
+{
+  position: relative;
+  bottom: 140px;
+  right: 400px;
+}
+
+.titele
+{
+  position: absolute;
+  top: 310px;
+  left: 435px;
+  font-size: 20pt;
+  background-color: "blue";
+}

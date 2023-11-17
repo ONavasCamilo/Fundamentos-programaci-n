@@ -38,4 +38,14 @@ var instructor = 'tony'
 if(false) {
     let instructor = "Franco";
 }
-console.log(instructor);
+// console.log(instructor);
+
+function encuentraNumMayor(arr, num) {
+    let arrResultado = []
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] > num) arrResultado.push(arr[i])
+    }
+return arrResultado
+}
+
+// console.log(encuentraNumMayor([12,24,15,65,3], 14))

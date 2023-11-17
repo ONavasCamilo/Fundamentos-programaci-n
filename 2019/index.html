@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>CREA TU PERSONAJE</title>
+  <h1>CREA TU PERSONAJE</h1>
+</head>
+<body>
+ <p> Decide desde que altura, nacionalidad y edad tendrá tu personaje ficticio, y al final del cuestionario podrás <br>revisar tus resultados organizados en una lista según tus respuestas.</p>
+  <p><strong>Responde a todas las preguntas como tú desees, no las respondas con la realidad. Será un personaje <br>ficticio.</strong></p>
+<script type = "text/Javascript">
+  var sexo = prompt("Define tu sexo\n En donde 1 será Masculino y 2 será Femenino");
+  var usuario = prompt("¿Cuál quieres que sea tu nombre?");
+  var edad = prompt("¿Qué edad tendrás?");
+  var peso = prompt("¿Qué peso deseas tener?");
+  var pais = prompt("¿Cuál será tu país de residencia?");
+  var pais_nacimiento = prompt("¿En dónde nació tu personaje?");
+  var altura = prompt("¿Cuál es la altura de tu personaje?");
+  if(sexo == 1)
+  {
+    document.write("<strong>SEXO:</strong> Masculino")
+  }
+  else if(sexo == 2)
+  {
+    document.write("<strong>SEXO:</strong> Femenino")
+  }
+  else
+  {
+    document.write("<strong>SEXO:</strong> Indefinido")
+  }
+  document.write("<strong><br/>NOMBRE:</strong> " + usuario);
+  document.write("<strong><br/>EDAD:</strong> " + edad);
+  document.write("<strong><br/>PESO:</strong> " + peso);
+  document.write("<strong><br/>PAIS DE RESIDENCIA:</strong> " + pais);
+  document.write("<strong><br/>PAIS DE NACIMIENTO:</strong> " + pais_nacimiento);
+  document.write("<strong><br/>ALTURA:</strong> " + altura);
+</script>
+</body>
+</html>

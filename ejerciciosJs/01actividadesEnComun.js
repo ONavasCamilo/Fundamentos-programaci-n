@@ -7,9 +7,7 @@ const persona2 = ['comer', 'dormir', 'futbol']
 function actividadesEnComun(arr1 = [], arr2 = []) {
     const newArr = []
     for (const e of arr1){
-        if(arr2.includes(e)){
-            newArr.push(e)
-        }
+        if(arr2.includes(e)) newArr.push(e)
     }
     return newArr
 }

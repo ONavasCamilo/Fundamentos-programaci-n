@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DIBUJAR CON LAS TECLAS</title>
+    <link rel="stylesheet" type="text/css" href="teclasSvgCss.css"></style>
+  </head>
+  <body>
+    <h1 class="titulo">¡DIBUJA CON LAS TECLAS!</h1>
+    <h1 class="titele">BORRADOR</h1>
+    <p class="parrafo">Usa las teclas para moverte dentro del cuadro y si deseas moverte
+      diagonalmente utiliza las letras <strong>V, B, N </strong>y <strong>M</strong>
+    <svg class="elsvg" height="400" width="900">
+      <circle  cx="870" cy="60" r="30" fill="gold" id="uIElementGold" onclick="clickMe();"/>
+      <circle  cx="870" cy="160" r="30" fill="black" id="uIElementBlack" onclick="clickMo();"/>
+      <circle  cx="870" cy="260" r="30" fill="blue" id="uIElementBlue" onclick="clickMa();"/>
+      <circle  cx="870" cy="360" r="30" fill="white" id="uIElementWhite" onclick="clickMi();"/>
+    </svg>
+  <img src="borradorFinal.png" width="200" height="200" class="imagenBorrador" id="uIElementImg" onclick="clickImg();"/>
+  <canvas class="canvitas" id="canvasis" width="400" height="400" style="border:3px solid #686F5E"></canvas>
+<script type="text/javascript" src="teclasConSvg.js"></script>
+  </body>
+</html>
