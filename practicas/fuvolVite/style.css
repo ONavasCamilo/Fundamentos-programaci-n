@@ -1,0 +1,84 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ font-family: 'Josefin Sans', sans-serif;
+ font-size: 17px;
+ background: #f8f8f8;
+}
+
+.header{
+ width: 100%;
+ max-height: 13vh;
+ background:#131313;
+ color: #fff;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.header > h1{
+ padding: 15px 40px;
+}
+
+.header__logo-messi{
+ width: 70px;
+ border-left: 2px solid #fff;
+ border-right: 2px solid #fff;
+}
+
+.section__h1{
+ text-align: center;
+ color: #fff;
+ background: #1C1C1C;
+ width: 30%;
+ padding: 10px;
+ margin: 0px auto; 
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ border-top: 2px solid #263194;
+ font-size: 21px;
+}
+
+.section__cont-ligas{
+ margin: 20px 50px;
+ padding: 30px;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+}
+
+.cont-ligas__cont{
+ max-height: 49vh;
+ border-radius: 12px;
+ margin: 18px;
+ padding: 15px;
+ background: #1d6e86;
+ text-align: center;
+ transition: 0.3s;
+}
+
+.cont-ligas__cont:hover{
+ cursor: pointer;
+ width: 230px;
+ background: #4897ad;
+ margin: 0 auto;
+ border-bottom-right-radius: 50px;
+ box-shadow: 7px 7px 10px #48c2a6e3;
+}
+
+.cont-ligas__logo{
+ width: 100%;
+ margin-top: 20px;
+}
+
+.cont-ligas__enlace{
+    text-decoration: none;
+    color: #fff;
+}
+.cont-ligas__enlace:visited{
+    color: #fff;
+}
+

@@ -49,3 +49,13 @@ return arrResultado
 }
 
 // console.log(encuentraNumMayor([12,24,15,65,3], 14))
+
+
+function encontrarPalabraEnFrase(frase, palabra){
+    let arr = []
+    for (let i = 0; i < frase.length; i++){
+        if(frase[i] === palabra) arr.push(frase[i])
+    }
+return arr
+}
+

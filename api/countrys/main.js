@@ -36,14 +36,8 @@ fetch(URLpaises)
         </p>
         <img src="${pais.flags.png}" alt="" class="bandera__pais">
         `
-    });
-     document.getElementById('banderas__paises').innerHTML = paises
+    }); 
+     document.getElementById('banderas__paises').innerHTML  = paises
 })
-
-function appendCh(padre, ...hijo) {
-    hijo.forEach(e => {
-        padre.appendChild(e)
-    })
-    }
 
 
