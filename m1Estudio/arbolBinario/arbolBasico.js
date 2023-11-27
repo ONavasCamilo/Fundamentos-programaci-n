@@ -49,11 +49,11 @@ Tree.prototype.add = function(value){
     }
 }
 
-Tree.prototype.reco = function(){
-    contenedor.push(this.value)
-    if(this.left) this.left.reco()
-    if(this.right) this.right.reco()
-}
+// Tree.prototype.reco = function(){
+//     contenedor.push(this.value)
+//     if(this.left) this.left.reco()
+//     if(this.right) this.right.reco()
+// }
 
 let tree = new Tree(50)
 tree.add(23)
@@ -63,8 +63,8 @@ tree.add(58)
 tree.add(2)
 tree.add(5)
 tree.add(65)
-tree.reco()
-console.log(tree)
+// tree.reco()
+// console.log(tree)
 
 let n = 10
 
@@ -76,10 +76,18 @@ class ArbolBinario{
         this.left = null
     }
 
-    add(){
+    add(value){
         if(this.value > value){
-            if(this.left = null) this.left = new ArbolBinario(value)
+            if(this.left === null) this.left = new ArbolBinario(value)
             else this.left.add(value)
+        } else {
+            if(this.right === null) this.right = new ArbolBinario(value)
+            else this.right.add(value)
         }
     }
 }
+
+let arbolito = new ArbolBinario(10)
+
+arbolito.add(1)
+console.log(arbolito)
