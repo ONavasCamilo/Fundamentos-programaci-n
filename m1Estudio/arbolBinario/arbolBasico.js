@@ -68,3 +68,18 @@ console.log(tree)
 
 let n = 10
 
+
+class ArbolBinario{
+    constructor(value){
+        this.value = value
+        this.right = null
+        this.left = null
+    }
+
+    add(){
+        if(this.value > value){
+            if(this.left = null) this.left = new ArbolBinario(value)
+            else this.left.add(value)
+        }
+    }
+}
