@@ -11,7 +11,7 @@ Lista.prototype.add = function (value) {
     if (this.head === null) this.head = new Nodo(value)
     else {
         let refe = this.head
-        while (refe.next !== null) {
+        while (refe.next) {
             refe = refe.next
         }
         refe.next = new Nodo(value)
@@ -22,7 +22,7 @@ Lista.prototype.search = function (value) {
     if(!this.head) return false
     else {
         let refe = this.head
-        while(refe !== null){
+        while(refe){
             if(refe.value === value) return true
             refe = refe.next
         }
@@ -60,13 +60,12 @@ Lista.prototype.combine = function(lista1, lista2){
 }
 
 Lista.prototype.substitution = function(value, newValue){
-    if(this.head.value === value) {
-        this.head.value = newValue
-    } else {
+    if(this.head.value === value) return this.head.value = newValue
+     else {
         let refe = this.head
-        while(refe.next !== null){
+        while(refe.next){
             if(refe.next.value === value){
-                refe.next.value = newValue
+               return refe.next.value = newValue
             } else {
                 refe = refe.next
             }
@@ -74,6 +73,7 @@ Lista.prototype.substitution = function(value, newValue){
     }
     return 'el dato no existe'
 }
+
 
 Lista.prototype.substitutionNodos = function(value, newNodo){
     if(this.head.value === value) {
@@ -95,7 +95,7 @@ Lista.prototype.substitutionNodos = function(value, newNodo){
 }
 
 
-let nodo = new Nodo('Ñoño')
+let nodo = new Nodo()
 
 let list = new Lista()
 list.add('Alfred')
@@ -106,7 +106,7 @@ list.add('Lobo')
 // list.substitution('Dario', [5,6,7,8])
 // list.substitution('Alfred', nodo)
 // list.substitutionNodos('Alfred', nodo)
-list.substitutionNodos('Tom', nodo)
+list.substitutionNodos('Gabriel', nodo)
 
 
 let list2 = new Lista()

@@ -19,9 +19,9 @@ function BubbleSort(mzt = []) {
 
 const mazos = [4, 2, 6, 1, 9, 3];
 
-for (let i = mazos.length - 1; i >= 0; i--) {
-    console.log(mazo[i]);
-}
+// for (let i = mazos.length - 1; i >= 0; i--) {
+//     console.log(mazo[i]);
+// }
 
 // Insertion
 
@@ -43,4 +43,20 @@ function insertionSort(array){
 }
 
 let arraysito = [5,4,3,6,2,1]
-insertionSort(arraysito)
+// insertionSort(arraysito)
+
+// function insertionSortGod(arr) {
+//   for(let i = 1; i < arr.length; i++) {
+//     let lugarActual = i
+//     let posicionAnterior = lugarActual - 1
+//     while(posicionAnterior - 1 >= 0 && arr[posicionAnterior] > arr[lugarActual])  {
+//       arr[posicionAnterior + 1] = arr[posicionAnterior]
+//       lugarActual = posicionAnterior
+//       posicionAnterior--
+//     }
+//     arr[lugarActual] = arr[i]
+//   }
+//   return arr
+// }
+
+// console.log(insertionSortGod(arraysito))
