@@ -7,8 +7,10 @@ import {
   getNotasInput,
 } from "./const.js";
 
-const carpetas = [];
+const $contListas = document.createElement("div");
+$contListas.classList.add("principal__cont-listas");
 
+const carpetas = [];
 let cont = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -18,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if ($sidebarInput.value.length === 0)
       return showToast("Nombra tu carpeta", "error");
     if (carpetas.some((carpeta) => carpeta.name === $sidebarInput.value)) {
-      $sidebarInput.value = ''
+      $sidebarInput.value = "";
       return showToast("Nombre de carpeta existente", "error");
     }
     cont++;
@@ -31,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const carpeta = {
       id: cont,
       name: $sidebarInput.value,
-      items: [],
+      items: []
     };
     carpetas.push(carpeta);
     showFolder(carpeta);
@@ -40,39 +42,33 @@ document.addEventListener("DOMContentLoaded", () => {
   $sidebarProyectos.addEventListener("click", (e) => {
     const carpetaClick = carpetas.find((c) => c.id === parseInt(e.target.id));
     showFolder(carpetaClick);
-    
+  });
+  $contenidoPrincipal.addEventListener("click", (e) => {
+    if (e.target.closest(".crear__notas-icono__lapiz")) {
+      const $notasInput = getNotasInput();
+      $contListas.innerHTML += `
+      <div class="principal__cont-lista" data-carpeta-id="${carpeta.id}">
+      <div class="cont-lista__div">
+      <h2 class="cont-lista__title">${$notasInput.value}</h2>
+      <svg class="cont-lista__icono" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="#ffffff" d="M4.5 17.27q-.213 0-.356-.145Q4 16.981 4 16.77q0-.213.144-.356q.143-.144.356-.144h15q.213 0 .356.144t.144.357q0 .213-.144.356t-.356.143h-15Zm0-4.77q-.213 0-.356-.144Q4 12.212 4 12t.144-.356q.144-.143.356-.143h15q.213 0 .356.144q.144.144.144.357t-.144.356q-.143.143-.356.143h-15Zm0-4.77q-.213 0-.356-.143T4 7.23q0-.213.144-.356q.143-.143.356-.143h15q.213 0 .356.144q.144.144.144.356q0 .213-.144.357q-.144.143-.356.143h-15Z"/></svg>
+    </div>
+      <div class="cont-lista__agregar-nota">+ Agregar nota</div>
+    </div>
+       `
+      const $constLista = e.target.closest('.principal__cont-lista')
+      const carpetaId = $constLista.dataset.carpetaId
+  
+      const carpeta = carpetas.find((c) => c.id === parseInt(carpetaId));
+  
+      if (carpeta) {
+        carpeta.items.push({
+          title: $notasInput.value
+        })
+      }
+      showFolder()
+    }
   });
 });
-
-$contenidoPrincipal.addEventListener("click", (e) => {
-  if (e.target.closest('.crear__notas-icono__lapiz')) {
-    const $notasInput = getNotasInput()
-    $notasInput.focus()
-    $contenidoPrincipal.innerHTML = `<div id="contenido-principal__listas" class="principal__cont-listas">
-    <div class="principal__cont-lista">
-        <h2>$</h2>
-    </div>
-    <div class="principal__cont-lista">
-
-    </div>
-    <div class="principal__cont-lista">
-
-    </div>
-    <div class="principal__cont-lista">
-
-    </div>
-    <div class="principal__cont-lista">
-
-    </div>
-    <div class="principal__cont-lista">
-
-    </div>
-    <div class="principal__cont-lista">
-
-    </div>
-</div>`
-  }
-})
 
 function showFolder(carpeta) {
   $contenidoPrincipal.innerHTML = `
@@ -87,11 +83,12 @@ function showFolder(carpeta) {
          <input id="notas-input" class="crear__notas-input cont-proyectos__input">
     </div>
     `;
-    const $notasInput = getNotasInput()
-    $notasInput.focus()
-};
+  $contenidoPrincipal.appendChild($contListas);
+  const $notasInput = getNotasInput();
+  $notasInput.focus();
+}
 
-const showToast = (title, icon) => {
+function showToast(title, icon) {
   const data = {
     toast: true,
     position: "bottom-end",
@@ -118,4 +115,7 @@ const showToast = (title, icon) => {
     icon,
     title,
   });
-};
+}
+
+
+console.log(carpetas)

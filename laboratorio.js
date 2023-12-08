@@ -33,29 +33,43 @@
 //     console.log('Error:', err)
 // }) 
 
-var instructor = 'tony'
+// var instructor = 'tony'
 
-if(false) {
-    let instructor = "Franco";
-}
-// console.log(instructor);
+// if(false) {
+//     let instructor = "Franco";
+// }
+// // console.log(instructor);
 
-function encuentraNumMayor(arr, num) {
-    let arrResultado = []
-    for (let i = 0; i < arr.length; i++) {
-        if(arr[i] > num) arrResultado.push(arr[i])
+// function encuentraNumMayor(arr, num) {
+//     let arrResultado = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if(arr[i] > num) arrResultado.push(arr[i])
+//     }
+// return arrResultado
+// }
+
+// // console.log(encuentraNumMayor([12,24,15,65,3], 14))
+
+
+// function encontrarPalabraEnFrase(frase, palabra){
+//     let arr = []
+//     for (let i = 0; i < frase.length; i++){
+//         if(frase[i] === palabra) arr.push(frase[i])
+//     }
+// return arr
+// }
+
+function findFirstRepeated(gifts) {
+    // Code here
+    for (let i = 0; i < gifts.length; i++) {
+      for (let j = gifts[i+1]; j < gifts.length; j++) {
+        if(gifts[i] === gifts[j]) return gifts[j]
+      }
     }
-return arrResultado
-}
+    return -1
+  }
 
-// console.log(encuentraNumMayor([12,24,15,65,3], 14))
+  let arr = [1, 2]
+  let aldoZorrita = true
 
-
-function encontrarPalabraEnFrase(frase, palabra){
-    let arr = []
-    for (let i = 0; i < frase.length; i++){
-        if(frase[i] === palabra) arr.push(frase[i])
-    }
-return arr
-}
-
+  console.log(findFirstRepeated(arr))
