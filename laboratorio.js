@@ -395,5 +395,7 @@ function calPoints(operations) {
   return resultado
 };
 
-console.log(calPoints([1]));
+// console.log(calPoints([1]));
+
+//! FIXEANDO 1 ENERO POR REPOSITORIO ARMANDO ELIMINADO
 
