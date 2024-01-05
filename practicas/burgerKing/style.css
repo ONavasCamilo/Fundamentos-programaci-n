@@ -42,3 +42,11 @@
 .header__cont-menu > li:hover {
     cursor: pointer;
 }
+
+main {
+}
+
+.footer__cont {
+    padding: 30px;
+    background: #E21E2D;
+}

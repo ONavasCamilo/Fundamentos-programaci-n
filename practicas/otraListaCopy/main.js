@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $contenidoPrincipal.addEventListener("click", (e) => {
     if (e.target.closest(".crear__notas-icono__lapiz")) {
       const $notasInput = getNotasInput();
+      console.log(e.target)
       $contListas.innerHTML += `
       <div class="principal__cont-lista" data-carpeta-id="${carpeta.id}">
       <div class="cont-lista__div">
