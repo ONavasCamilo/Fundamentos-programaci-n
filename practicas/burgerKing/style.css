@@ -43,7 +43,53 @@
     cursor: pointer;
 }
 
-main {
+.main__super-cont {
+    background: #f0f0f0;
+    display: flex;
+}
+
+.main__cont {
+    display: flex;
+    padding: 10px;
+}
+
+.main__cont > h2 {
+    color: #f1eded;
+    text-shadow: 1px 1px 7px #444040;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.main__img-envio {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.main_form-pedir {
+    margin-top: 70px;
+    margin-left: -161px;
+}   
+
+.form-pedir__cont {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #000;
+    text-shadow: 2px 2px 10px #E21E2D;
+}
+
+.form-pedir__input {
+    margin: 9px;
+    padding: 0.5em;
+    border: 1.5px solid #aaa9a9;
+}
+
+.form-pedir__submit {
+    margin: 15px;
+    padding: 0.5em;
+    background: #332f2f;
+    border: 1.5px solid #fff;
+    color: #fff
 }
 
 .footer__cont {
