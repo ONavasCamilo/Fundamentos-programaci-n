@@ -242,7 +242,7 @@ function updateRecords(records, id, prop, value) {
   return records;
 }
 
-updateRecords(recordCollection, 5439, "artist", "ABBA");
+// updateRecords(recordCollection, 5439, "artist", "ABBA");
 
 //Después de updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me"), tracks debe tener la cadena Take a Chance on Me como último y único elemento.
 
@@ -251,21 +251,29 @@ updateRecords(recordCollection, 5439, "artist", "ABBA");
 //Después de updateRecords(recordCollection, 2468, "tracks", "Free"), tracks debe tener la cadena 1999 como primer elemento.
 
 
-function sortPrimeHouses(array) {
-  // Tu código aquí:
-  for (let i = 0; i < array.length - 1; i++) {
-      for (let j = 0; j < array.length - i - 1; j++) {
-          if (array[j] > arr[j + 1]) {
-              let aux = array[j]
-              array[j] = array[j + 1]
-              array[j + 1] = aux
-          }
-      }
-      let numeroOrdenado = array[array.length - i - 1]
-      for (let i = 2; i <= Math.sqrt(numeroOrdenado))
-  }
-  return array
+// function sortPrimeHouses(array) {
+//   // Tu código aquí:
+//   for (let i = 0; i < array.length - 1; i++) {
+//       for (let j = 0; j < array.length - i - 1; j++) {
+//           if (array[j] > arr[j + 1]) {
+//               let aux = array[j]
+//               array[j] = array[j + 1]
+//               array[j + 1] = aux
+//           }
+//       }
+//       let numeroOrdenado = array[array.length - i - 1]
+//       for (let i = 2; i <= Math.sqrt(numeroOrdenado))
+//   }
+//   return array
+// }
+
+
+// console.log(sortPrimeHouses([8,4,6,9,12,2,1,15]))
+
+for (var i = 0; i < 5; i++) {
+  setTimeout(function() {console.log(i)}, 1000)
 }
 
-
-console.log(sortPrimeHouses([8,4,6,9,12,2,1,15]))
+setTimeout(function() {
+  console.log(`Valor final de 'i' usando 'var': "${i}"`)
+})
