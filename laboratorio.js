@@ -270,10 +270,19 @@ function updateRecords(records, id, prop, value) {
 
 // console.log(sortPrimeHouses([8,4,6,9,12,2,1,15]))
 
-for (var i = 0; i < 5; i++) {
-  setTimeout(function() {console.log(i)}, 1000)
+// for (var i = 0; i < 5; i++) {
+//   setTimeout(function() {console.log(i)}, 1000)
+// }
+
+// setTimeout(function() {
+//   console.log(`Valor final de 'i' usando 'var': "${i}"`)
+// })
+
+function imprimirMensaje() {
+  console.log("Mensaje:\n salto de linea.");
+  console.log("Mensaje:\t salto de tabulador");
+  console.log("Mensaje:\v tabulacion vertical");
+  console.log("Mensaje:\\ barra diagonal inversa");
 }
 
-setTimeout(function() {
-  console.log(`Valor final de 'i' usando 'var': "${i}"`)
-})
+imprimirMensaje()
