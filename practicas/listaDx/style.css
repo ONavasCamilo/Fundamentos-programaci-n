@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header__cont {
+  padding: 20px;
+  background: rgb(134 239 172);
+}
+
+.principal__input {
+    outline: none;
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: .7rem;
+    width: 50%;
+    border: 2px solid rgb(22 101 52);
+    border-top: 1px solid rgba(159, 161, 160, 0.142);
+    background: rgba(159, 161, 160, 0.142);
+}
+
+.principal__submit {
+    display: block;
+    margin: 10px auto;
+    padding: .4rem;
+    width: 15%;
+    border-radius: 3px;
+    border: 1.5px solid #49634a;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    background: #58b85b;
+    color: #fff;
+}
+
+.cont__notes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    min-height: calc(100vh - 140px);
+}
