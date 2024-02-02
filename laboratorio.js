@@ -285,5 +285,31 @@ function imprimirMensaje() {
   console.log("Mensaje:\\ barra diagonal inversa");
 }
 
-imprimirMensaje()
+// imprimirMensaje()
 //fixeando 11 de enero
+
+// let prueba = document.URL
+// console.log(prueba)
+
+// function mostrarInfo( {nombre = 'Desconocido', edad } = {}) {
+//   return `Nombre: ${nombre}, Edad: ${edad}`
+// }
+// console.log(mostrarInfo({edad:30}))
+
+// const prueba = document.querySelector('.clase')
+// console.log(prueba)
+
+class Animal {
+  constructor(nombre) {
+    this.nombre = nombre
+  }
+}
+
+class Perro extends Animal {
+  ladrar() {
+    return `${this.nombre} está ladrando`
+  }
+}
+
+const miPerro = new Perro('firu')
+console.log(miPerro.ladrar());
