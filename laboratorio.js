@@ -299,17 +299,27 @@ function imprimirMensaje() {
 // const prueba = document.querySelector('.clase')
 // console.log(prueba)
 
-class Animal {
-  constructor(nombre) {
-    this.nombre = nombre
+// class Animal {
+//   constructor(nombre) {
+//     this.nombre = nombre
+//   }
+// }
+
+// class Perro extends Animal {
+//   ladrar() {
+//     return `${this.nombre} está ladrando`
+//   }
+// }
+
+// const miPerro = new Perro('firu')
+// console.log(miPerro.ladrar());
+
+const contador = function(n = 1) {
+  let cont = n
+  return function() {
+    return cont++
   }
 }
 
-class Perro extends Animal {
-  ladrar() {
-    return `${this.nombre} está ladrando`
-  }
-}
-
-const miPerro = new Perro('firu')
-console.log(miPerro.ladrar());
+const contadorsin = contador()
+console.log(contadorsin());
