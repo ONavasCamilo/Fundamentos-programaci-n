@@ -322,4 +322,53 @@ const contador = function(n = 1) {
 }
 
 const contadorsin = contador()
-console.log(contadorsin());
+// console.log(contadorsin());
+
+
+function foo() {
+  function bar() {
+    return 3
+  }
+  return bar()
+  function bar() {
+    return 8
+  }
+}
+
+// console.log(foo());
+
+// setTimeout(() => console.log("Node"), 0)
+// console.log("JS");
+
+function noPromesa() {
+  return 'no soy promesa'
+}
+
+async function myFunction() {
+  const result = await noPromesa()
+  console.log(result);
+}
+
+// myFunction()
+
+var name = "Juan"
+
+function printName() {
+  console.log(name);
+}
+
+function wrapper() {
+  var name = "Pedro"
+  printName()
+}
+
+// wrapper()
+
+// console.log("1");
+// setTimeout(function() {
+//   console.log("2");  
+// }, 0);
+// Promise.resolve().then(function() {
+//   console.log("3");
+// })
+// console.log("4");
