@@ -1,0 +1,16 @@
+{
+  "name": "cursosyt",
+  "version": "1.0.0",
+  "description": "Fundamentos de JavasCript junto a css básico, intermedio. Desde lo más básico hasta el nivel avanzado de JavasCript junto con algunos proyectos sencillos, funcionales y \r esteticos, intentando aplicar un codigo semanticamente correcto y según los fundamentos del lenguaje. Se espera terminar junto a los fundamentos de PHP y crear \r repositorio para iniciar node.js",
+  "main": "laboratorio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Camilo Navas",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
