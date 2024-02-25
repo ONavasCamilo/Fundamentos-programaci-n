@@ -8,3 +8,6 @@ sayHello(usuario)
 sayHello(1)
 sayHello(true)
 sayHello(["No", "Funca"])
+
+console.log(process.argv[1]);
+
