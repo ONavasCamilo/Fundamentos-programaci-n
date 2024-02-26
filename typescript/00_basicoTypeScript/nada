@@ -1,0 +1,10 @@
+let persona = 'raul'
+persona = 2
+
+const personita = {
+     name: "pepe",
+     age: 30
+}
+
+personita.name
+personita.ksk
