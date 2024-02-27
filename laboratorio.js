@@ -372,3 +372,13 @@ function wrapper() {
 //   console.log("3");
 // })
 // console.log("4");
+
+var findErrorNums = function (nums) {
+  const tomados = []
+  const repetido = []
+  for (let i = 0; i < nums.length; i++) {
+    if (tomados.includes(nums[i])) return repetido.push(nums[i])
+    else tomados.push(nums[i])
+  }
+  return repetido
+};
