@@ -9,5 +9,5 @@ sayHello(1)
 sayHello(true)
 sayHello(["No", "Funca"])
 
-console.log(process.argv[1]);
+// console.log(process.argv[1]);
 

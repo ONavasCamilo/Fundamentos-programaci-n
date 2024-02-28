@@ -156,7 +156,7 @@ function fiboRecursivo(num) {
   return fiboRecursivo(num - 2) + fiboRecursivo(num - 1);
 }
 
-console.log(fiboRecursivo(8));
+// console.log(fiboRecursivo(8));
 
 // 8 --> 8-2=    6  +   8-1=    7
 //   6       +        7
@@ -373,12 +373,27 @@ function wrapper() {
 // })
 // console.log("4");
 
-var findErrorNums = function (nums) {
-  const tomados = []
-  const repetido = []
-  for (let i = 0; i < nums.length; i++) {
-    if (tomados.includes(nums[i])) return repetido.push(nums[i])
-    else tomados.push(nums[i])
+// var findErrorNums = function (nums) { 
+//   const tomados = []
+//   const repetido = []
+//   for (let i = 0; i < nums.length; i++) {
+//     if (tomados.includes(nums[i])) return repetido.push(nums[i])
+//     else tomados.push(nums[i])
+//   }
+//   return repetido
+// };
+
+function calPoints(operations) {
+  const resultado = []
+  if (typeof operations === 'number') {
+    resultado.push(operations)
   }
-  return repetido
+  switch (operations) {
+      case 'D':
+          break;
+  }
+  return resultado
 };
+
+console.log(calPoints([1]));
+
