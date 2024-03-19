@@ -399,3 +399,8 @@ function calPoints(operations) {
 
 //! FIXEANDO 1 ENERO POR REPOSITORIO ARMANDO ELIMINADO
 
+const confirm = 1
+const handleClick = () => {
+  if (confirm) return confirm
+}
+// console.log(handleClick())
