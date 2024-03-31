@@ -404,3 +404,9 @@ const handleClick = () => {
   if (confirm) return confirm
 }
 // console.log(handleClick())
+
+let i = 0
+console.log(++i);
+console.log(i++);
+
+console.log(i);
