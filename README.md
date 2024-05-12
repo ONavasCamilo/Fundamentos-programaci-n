@@ -1,4 +1,3 @@
 # FundamentosJavasCript
-Fundamentos de JavasCript junto a css básico, intermedio. Desde lo más básico hasta el nivel avanzado de JavasCript junto con algunos proyectos sencillos, funcionales y 
-esteticos, intentando aplicar un codigo semanticamente correcto y según los fundamentos del lenguaje. Se espera terminar junto a los fundamentos de PHP y crear 
-repositorio para iniciar node.js
+
+Mi camino en el inicio de los fundamentos web, Javascript, css, desde lo básico, intermedio a avanzado junto con proyectos sencillos. Fundamentos de front y back básicos.
